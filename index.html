@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoMuzik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- <style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        /* background-image: url(./brown-1562019_1280.png);
+        background-repeat:no-repeat;
+        background-size: cover; */
+        /* background: linear-gradient( #e6b980, #eacda3 ); */
+        background: #cfb1a8;
+        background: linear-gradient(180deg, #cfb1a8 0%, #30252b 60%, #3e241e 100%);
+        font-family: "Work Sans", sans-serif;
+        max-width: 100%;
+
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #fff;
+    }
+
+    .navbar .nav-ul li {
+        display: inline-block;
+        list-style-type: none;
+        margin-right: 20px;
+    }
+
+    .navbar .nav-ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .navbar .nav-ul .nav-btn {
+        padding: 12px;
+        border-radius: 20px;
+        /* border-color: #e2bea8; */
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        border: 2px solid white;
+        cursor: pointer;
+        overflow: hidden;
+        color: #fff;
+    }
+    .navbar .nav-ul .nav-btn:hover{
+        background-color: #fff;
+        color: #cfb1a8;
+    }
+    .navbar .logo {
+        font-size: 40px;
+        font-weight: 500;
+        transform: translateX(-35px);
+        cursor: pointer;
+    }
+
+    .hero {
+        background-image: url('./pngwing.com.png');
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: 440px;
+        max-width: 80%;
+        margin: auto;
+        z-index: -1;
+    }
+
+    .hero-txt {
+        font-size: 80px;
+        position: relative;
+        top: 50px;
+        /* left: 170px; */
+        /* margin-top: 50px; */
+        /* transform: translateY(100px); */
+        color: white;
+        /* transform: translateY(500px); */
+    }
+
+    .hero-para {
+        font-size: 20px;
+        /* position: relative;
+        top: 50px;
+        left: 170px; */
+        transform: translateY(50px);
+        color: white;
+    }
+
+    .btn-lrn {
+        padding: 12px;
+        /* border-radius: 20px ; */
+        /* border-color: #e2bea8; */
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        /* border: 2px solid white; */
+        cursor: pointer;
+        overflow: hidden;
+        color: #fff;
+        border: none;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 16px;
+        /* position: relative;
+        top: 100px;
+        left: 180px; */
+        transform: translateY(100px);
+
+    }
+
+    .btn-str {
+        background: radial-gradient(1091px at 106.5% 111.5%, rgb(250, 246, 213) 0.1%, rgb(218, 147, 93) 42.2%, rgb(137, 86, 67) 74.3%, rgb(67, 39, 39) 100.2%);
+        padding: 12px 20px 12px 20px;
+        border-radius: 20px;
+        border: none;
+        color: black;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 16px;
+        /* position: relative;
+        top: 100px;
+        left: 170px; */
+        transform: translateY(100px);
+        cursor: pointer;
+    }
+
+    .art-ul {
+        display: inline-block;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .art-title {
+        font-size: 15px;
+        color: #fff;
+    }
+
+    .art-cont {
+        font-size: 35px;
+        font-weight: 600;
+        color: #fff;
+        margin-top: 12px;
+    }
+
+    #art1 {
+        /* position: relative;
+        left:60px; */
+        transform: translateX(60px);
+        z-index: -2;
+    }
+
+    #art2 {
+        /* position: relative;
+        left:40px; */
+        z-index: -1;
+        transform: translateX(40px);
+    }
+
+    #art3 {
+        /* position: relative;
+        left:20px; */
+        transform: translateX(20px);
+
+        z-index: 1;
+    }
+
+    #art4 {
+        /* position: relative;
+        left:0px; */
+        z-index: 2;
+        transform: translateX(0px);
+
+    }
+
+    .art {
+        display: flex;
+        /* justify-content: space-around; */
+        max-width: 80%;
+        align-items: center;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.4);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+    }
+
+    .art-2 {
+        /* display: flex;
+      justify-content:flex-end;
+      align-items: end; */
+        /* align-self: flex-end;
+    align-content: end; */
+    }
+
+    #trend1 {
+        /* /* width: 400px;
+       position: relative;
+       background-color: #fff; */
+        background: linear-gradient(110.2deg, rgb(111, 71, 133) 3.6%, rgb(232, 129, 166) 50.3%, rgb(237, 237, 183) 97.4%);
+        display: inline-block;
+        /* position: relative;
+        top: 150px; */
+        /* transform: translateY(150px); */
+        height: 110px;
+        /* width: 152px; */
+        border-radius: 20px;
+        border: none;
+        /* filter: drop-shadow(0 0 8px); */
+    }
+
+    #trend2 {
+        background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+        display: inline-block;
+        height: 110px;
+        /* width: 152px; */
+        border-radius: 20px;
+        transform: translate(20px, -10px);
+        /* transform: translateX(20px); */
+    }
+
+    #trend3 {
+        background: radial-gradient(344px at 1.4% 0%, rgb(242, 185, 252) 19.3%, rgb(250, 254, 190) 80.7%);
+        display: inline-block;
+        height: 110px;
+        width: 175px;
+        /* transform: translateY(150px);
+         */
+        border-radius: 20px;
+    }
+
+    #trend4 {
+        background: linear-gradient(110.3deg, rgb(238, 179, 123) 8.7%, rgb(216, 103, 77) 47.5%, rgb(114, 43, 54) 89.1%);
+        display: inline-block;
+        height: 110px;
+        width: 175px;
+        /* transform: translate(20px,130px); */
+        transform: translate(20px, -20px);
+        border-radius: 20px;
+
+    }
+
+    #trend-im-1,
+    #trend-im-2,
+    #trend-im-3,
+    #trend4-im-4 {
+        /* z-index: -2; */
+    }
+
+    #trend-im-1 {
+        transform: translateY(-55px);
+        /* z-index: 1; */
+    }
+
+    #trend-im-2 {
+        transform: translate(5px, -45px);
+
+        /* z-index: 1; */
+    }
+
+    #trend-im-3 {
+        position: relative;
+        top: -70px;
+        left: 10px;
+    }
+
+    #trend-im-4 {
+        position: relative;
+        top: -50px;
+        left: 10px;
+    }
+
+    #eth {
+        font-size: 30px;
+        font-weight: 700;
+        padding: 20px;
+    }
+
+    #art-section {
+        transform: translateX(150px);
+    }
+
+    #colorbreak {
+        min-width: 100%;
+        min-height: 200px;
+        /* background-image: linear-gradient(360deg, #3e241e,#3e241e,#cfb1a8, #3e241e,#3e241e); */
+        background: linear-gradient(360deg, #30252b);
+    }
+
+    #colorbreak-2 {
+        min-width: 100%;
+        min-height: 200px;
+        background: linear-gradient(360deg, #cfb1a8);
+    }
+    #colorbreak-3 {
+        min-width: 100%;
+        min-height: 120px;
+        background: linear-gradient(360deg, #cfb1a8);
+    }
+
+    .trend {
+        width: 80%;
+        margin: auto;
+        height: 500px;
+        display: flex;
+        transform: translateY(160px);
+    }
+
+    .tr-1 {
+        width: 50%;
+
+    }
+
+    .tr-2 {
+        width: 50%;
+        transform: translateY(-25px);
+    }
+
+    .tr2-popular {
+        font-size: 10px;
+        color: hotpink;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    .tr2-hot {
+        font-size: 40px;
+        font-weight: 500;
+        color: white;
+        transform: translateY(-40px);
+    }
+
+    .tr2-para {
+        color: white;
+        font-size: 15px;
+        transform: translateY(-78px);
+    }
+
+    .tr2-btn {
+        transform: translateY(-74px);
+        background-color: transparent;
+        border: 0px solid transparent;
+        color: white;
+        font-size: 20px;
+
+    }
+    /* .tr2-btn:hover{
+        font-size: 25px;
+        color: #cfb1a8;
+        transition: 0.5s ease-in-out;
+    } */
+
+    .cards {
+        /* border: 2px solid white; */
+        height: 245px;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        gap: 20px;
+    }
+
+    .card1 {
+        /* flex-grow: 1; */
+        height: 220px;
+        /* border: 2px solid white; */
+
+    }
+    /* .card2:hover{
+        min-height:250px ;
+    } */
+
+    .card2 {
+        /* border: 2px solid white; */
+        height: 240px;
+        border-radius: 25px;
+        /* flex-grow: 1; */
+        background-color: rgba(255, 255, 255, 0.4);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        /* z-index: 2; */
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 45px;
+    }
+
+    .card2:hover{
+        height: 280px;
+        background-color: hotpink;
+    }
+    .card3 {
+        /* flex-grow: 1; */
+        /* border: 2px solid white; */
+        height: 240px;
+        border-radius: 25px;
+        /* flex-grow: 1; */
+        background-color: rgba(255, 255, 255, 0.4);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        /* z-index: 2; */
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .card3:hover{
+        height: 280px;
+        background-color: hotpink;
+    }
+    .card1-art {
+        font-size: 12px;
+        color: hotpink;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    .card1-Top {
+        font-size: 50px;
+        font-weight: 500;
+        color: white;
+        transform: translateY(-30px);
+    }
+
+    .card1-para {
+        color: white;
+        font-size: 15px;
+        transform: translateY(-60px);
+
+    }
+
+    .card-title {
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        transform: translateY(-35px);
+    }
+
+    .card-para {
+        color: white;
+        font-size: 10px;
+        transform: translateY(-30px);
+
+    }
+
+    .card2-pic {
+        /* align-items: end; */
+        background-image: url(./nude-woman-portrait-skincare-concept.jpg);
+        background-size: cover;
+        background-position-y: -40px;
+        width: 270px;
+        min-height: 140px;
+        z-index: 2;
+        border-radius: 25px;
+        /* transform: translateY(-20px); */
+    }
+
+    .card-top-img {
+        transform: translateY(-40px);
+    }
+
+    .card2-pause {
+        transform: translateY(-40px);
+        color: orange;
+    }
+
+    .card3-pic {
+        /* align-items: end; */
+        background-image: url(./_92de9942-ffcf-4ee3-8d75-3ae7db45e419.jpeg);
+        background-size: cover;
+        background-position-y: -40px;
+        width: 270px;
+        min-height: 140px;
+        z-index: 2;
+        border-radius: 25px;
+        /* transform: translateY(-20px); */
+    }
+
+    .brands {
+        max-width: 80%;
+        margin: auto;
+        display: flex;
+        gap: 80px;
+    }
+
+    .brands>img {
+        aspect-ratio: 8/2;
+        object-fit: contain;
+    }
+
+    .Subsc-Btn {
+        background: radial-gradient(1091px at 106.5% 111.5%, rgb(250, 246, 213) 0.1%, rgb(218, 147, 93) 42.2%, rgb(137, 86, 67) 74.3%, rgb(67, 39, 39) 100.2%);
+        padding: 12px 20px 12px 20px;
+        border-radius: 20px;
+        border: none;
+        color: black;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 16px;
+        /* position: relative;
+        top: 100px;
+        left: 170px; */
+        /* transform: translateY(100px); */
+        cursor: pointer;
+    }
+
+    .subsc-txt {
+        font-size: 70px;
+        color: #fff;
+    }
+    .subsc{
+        max-width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer{
+        display: flex;
+        max-width: 80%;
+        margin: auto;
+        color: #fff;
+        gap: 40px;
+        /* background: #cfb1a8; */ 
+        
+        /* #30252b 60%, #3e241e 100%); */
+    }
+    .footer>div>ul{
+        list-style-type: none;
+       
+    }
+    .footer>div>ul>li{
+    cursor:pointer;
+    }
+    .footer i{
+        cursor: pointer;
+    }
+    .Yomuz{
+        flex-grow: 1;
+    }
+    .bgfooter{
+        margin-top: 100px;
+        /* background: linear-gradient(90deg, #cfb1a8 0%, #30252b 100%, #3e241e 100%); */
+
+        background: linear-gradient(360deg, #30252b);
+    }
+    .yomuz-title{
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .explore-title{
+        font-weight: 600;
+    }
+    .stat-title{
+        font-weight: 600;
+    }
+    .res-title{
+        font-weight: 600;
+    }
+    .company-title{
+        font-weight: 600;
+    }
+#icon{
+    margin: 15px 0px 15px 30px;
+}
+.footer ul li{
+    margin-top: 10px;
+}
+</style> -->
+
+<body>
+    <nav class="navbar">
+        <span class="logo">YoMuzik</span>
+        <ul class="nav-ul">
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">Market Place</a></li>
+            <li><a href="#">Community</a></li>
+            <button class="nav-btn">Connect Wallet</button>
+        </ul>
+    </nav>
+    <div class="hero">
+        <span class="hero-txt">Discover
+            <br> Digital Art and
+            <br>
+            Collect NFTs. </span>
+        <span>
+            <p class="hero-para">
+                YoMuzik is a shared liquidity NFT market smart
+        </span> <br><span>contract which is
+            used by multiple websites to<br><span>provide the users the best possible experience </p></span>
+
+
+            <button class="btn-str">Get Started</button>
+            <button class="btn-lrn">Learn More <i class="fa-solid fa-arrow-right-long"></i></button>
+    </div>
+
+    <div class="art">
+        <span class="art-1">
+            <ul class="art-ul">
+                <li class="art-title">Artwork</li>
+                <li class="art-cont">27k+</li>
+            </ul>
+            <ul class="art-ul">
+                <li class="art-title">Auction</li>
+                <li class="art-cont">25k+</li>
+            </ul>
+            <ul class="art-ul">
+                <li class="art-title">Artist</li>
+                <li class="art-cont">12k+</li>
+            </ul>
+        </span>
+        <span class="art-2" id="art-section">
+            <ul class="art-ul">
+                <li class="art-title">Art <span id="eth">3.4 ETH</span></li>
+                <li id="art-contain"><img id="art1"
+                        src="./png/circle-profile-picture-face-person-human-clothing-transparent-png-488441.png" alt=""
+                        width="80px">
+                    <img id="art2"
+                        src="./png/circle-profile-picture-no-background-person-face-man-student-transparent-png-2576921.png"
+                        alt="" width="80px">
+                    <img id="art3" src="./png/NicePng_cammy-png_1829287.png" alt="" width="80px">
+                    <img id="art4" src="./png/pngfind.com-rob-png-5217825.png" alt="" width="80px">
+                </li>
+                <!-- <span class="art-cont">3.4 ETH</span> -->
+        </span>
+    </div>
+    <div class="trend">
+        <div class="tr-1">
+            <span id="trend1"><img id="trend-im-1"
+                    src="./artitst/kisspng-kim-kardashian-human-skin-contouring-dark-skin-cosmetic-model-5b379b4a0a1b45.8470432115303708900414.png"
+                    alt="" width="172px"></span>
+            <span id="trend2"><img id="trend-im-2" src="./artitst/imgbin_beard-facial-hair-man-moustache-face-png.png"
+                    alt="" width="180px"></span> <br>
+            <span id="trend3"><img id="trend-im-3" src="./artitst/5bbc38295adfa-fe5391a57437cbd295adf087ed3e8399.png"
+                    alt="" width="180px"></span>
+            <span id="trend4"><img id="trend-im-4" src="./artitst/pngegg.png" alt="" width="160px"></span>
+        </div>
+        <div class="tr-2">
+            <h6 class="tr2-popular">Popular Item</h6>
+            <h4 class="tr2-hot">Hot Trending <br> On This <br> Week.</h4>
+            <p class="tr2-para">
+                Various Kinds of NFTs that are trending the trend will <br> be reset every week.Dont miss out on the
+                best NFTs <br> every week.
+            </p>
+
+            <button class="tr2-btn">See all <i class="fa-solid fa-arrow-right-long"></i> </button>
+        </div>
+    </div>
+
+    <!-- Colour breaking section -->
+    <div id="colorbreak"></div>
+
+
+    <div class="cards">
+        <div class="card1">
+            <h6 class="card1-art">
+                Artist
+            </h6>
+            <h4 class="card1-Top">Top List <br> Artist.</h4>
+            <p class="card1-para">
+                We have dozens of artists who contribute <br> to create amazing works
+            </p>
+        </div>
+        <div class="card2">
+            <span class="card-top-img"><img src="./pngegg (1).png" width="80px" alt=""></span>
+            <div class="card2-pause"><i class="fa-solid fa-pause"></i></div>
+            <div class="card-title">Johnny Five</h3>
+            </div>
+            <div class="card-para">Binance Survey March 22</p>
+            </div>
+            <div class="card2-pic">
+            </div>
+        </div>
+        <div class="card3">
+            <span class="card-top-img"><img src="./Daco_2432453.png" width="80px" alt=""></span>
+            <div class="card2-pause"><i class="fa-solid fa-pause"></i></div>
+            <div class="card-title">Lucinta Luna</h3>
+            </div>
+            <div class="card-para">Binance Survey March 22</p>
+            </div>
+            <div class="card3-pic">
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- Colour breaking section -->
+    <div id="colorbreak-2"></div>
+
+    <div class="brands">
+        <img src="./logo-megascans (1) (1).png" width="15%" alt="">
+        <img src="./NicePng_unreal-engine-4-logo_2752689.png" width="15%" alt="">
+        <img src="./1683020860metamask-logo-white.png" alt="" width="15%">
+        <img src="./Binance-Logo-PNG.png" width="15%" alt="">
+        <img src="./pngkey.com-creepers-png-1039637.png" width="15%" alt="">
+    </div>
+
+    <!-- Colour breaking section -->
+    <div id="colorbreak-3"></div>
+
+
+
+    <div class="subsc">
+        <span class="subsc-txt">
+           Subscribe to Get Fresh <br>
+            News Update About <br>
+            NFTs.
+        </span>
+        <div>
+        <button class="Subsc-Btn">Subscribe</button>
+    </div>
+    </div>
+
+<div class="bgfooter">
+<div class="footer">
+    <div class="Yomuz">
+        <h3 class="yomuz-title">YoMuzik</h3>
+        <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Aspernatur odit quidem</p>
+        <i class="fa-brands fa-discord"></i>
+        <i class="fa-brands fa-twitter" id="icon"></i>
+        <i class="fa-brands fa-facebook" id="icon"></i>
+        <i class="fa-brands fa-telegram" id="icon"></i>
+<p class="copy">Copyright &copy;YoMuzik2024</p>
+    </div>
+
+    <div class="explore">
+    <ul>
+        <li><h3 class="explore-title">Explore</h3></li>
+        <li>Art</li>
+        <li>Collection</li>
+        <li>Domain Name</li>
+        <li>Utility</li>
+    </ul>
+    </div>
+
+
+    <div class="stat">
+    <ul>
+        <li><h3 class="stat-title">Statistic</h3></li>
+        <li>Ranking</li>
+        <li>Activity</li>
+    </ul>
+    </div>
+
+
+    <div class="resource">
+        <ul>
+        <li><h3 class="res-title">Resource</h3></li>
+        <li>Help Center</li>
+        <li>Platform Status</li>
+        <li>Partners</li>
+        <li>Blog</li>
+        <li>FAQ</li>
+    </ul>
+    </div>
+
+
+    <div class="company">
+        <ul>
+        <li><h3 class="company-title">Company</h3></li>
+        <li>About Us</li>
+        <li>Career</li>
+        <li>Support</li>
+    </ul>
+    </div>
+</div>
+</div>
+</body>
+
+</html>
