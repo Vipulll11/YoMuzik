@@ -471,7 +471,7 @@
         background-position-y: -40px;
         width: 270px;
         min-height: 140px;
-        z-index: 2;
+        z-index: 202;
         border-radius: 25px;
         /* transform: translateY(-20px); */
     }
